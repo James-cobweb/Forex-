@@ -1,0 +1,52 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: green;
+    align-content: center;
+    width: 100%;
+    justify-items: space-between;
+    gap: 7rem;
+}
+.calculator-container h1{
+    color:white;
+   align-self: center;
+}
+.input-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-items:space-between;
+   gap: 10px;
+   font-size: 2rem;
+}
+.input-section input,select{
+    width: 18rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+#calculate-btn{
+    width: 7rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.result-section{
+    display: flex;
+    flex-direction: column;
+    background: goldenrod;
+    color: black;
+    justify-items: space-between;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}

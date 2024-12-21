@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex position-size Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>FOREX  POSITION-SIZE CALCULATOR</h1>
+        <div class="input-section">
+                <label for="account-currency">Account Currency:</label><br>
+                <select name="" id="account-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GPB</option>
+                    <option value="JPY">JPY</option>
+                    <option value=""></option>
+                </select><br>
+                <label for="account-balance">Account Balance:</label><br>
+                <input type="number"  id="account-balance" placeholder="Enter your account balance"><br>
+                
+                <label for="risk-percentage">Risk Percentage:</label><br>
+                <input type="number"  id="risk-percentage" placeholder="Enter your risk percentage (e.g 1%)"><br>
+
+                <label for="stop-loss">Stop Loss(Pips):</label><br>
+                <input type="number" id="stop-loss" placeholder="Enter your stop loss in pips "><br>
+
+                <label for="currency-pair">Currency Pair:</label>
+                <select name="" id="currency-pair">
+                    <option value="gpb/usd">GBP/USD</option>
+                    <option value="usd/jpy">USD/JPY</option>
+                    <option value="aud/usd">AUD/USD</option>
+                    <option value="eur/usd">EUR/USD</option>
+                </select><br>
+                <label for="exchange-rate">Exchange Rate:</label>
+                <input type="text" id="exchange-rate" placeholder="Enter the exchange rate of the Currency Pair you enter"><br>
+
+                <label for="lot-size">Lot Size</label>
+                <select name="" id="lot-size">
+                    <option value="standard">Standard Lot</option>
+                    <option value="mini">Mini Lot</option>
+                    <option value="micro">Micro Lot</option>
+                </select>
+
+                <button type="submit" id="calculate-btn"> calculate</button>
+        </div>
+        <div class="result-section">
+            <h2>Results</h2>
+            <p id="risk-amount">risk amount:</p>
+            <p id="position-size">Position Size (Units):</p>
+            <p id="pip-value">Pip Value:</p>
+            <h3>Lots size:</h3>
+                <p id="standard-lot">Standard lot:</p>
+                <p id="macro-lot">Macro lot:</p>
+                <p id="micro-lot">micro lot:</p>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
